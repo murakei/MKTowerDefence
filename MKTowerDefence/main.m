@@ -2,7 +2,7 @@
 //  main.m
 //  MKTowerDefence
 //
-//  Created by Muradome on 2013/01/13.
+//  Created by Murakei on 2013/01/13.
 //  Copyright (c) 2013年 Murakei. All rights reserved.
 //
 
