@@ -10,6 +10,9 @@
 
 #import "MKAppDelegate.h"
 
+/**
+ * 本プロジェクト内では直接編集することはない
+ */
 int main(int argc, char *argv[])
 {
     @autoreleasepool {

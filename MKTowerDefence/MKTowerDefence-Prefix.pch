@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'MKTowerDefence' target in the 'MKTowerDefence' project
+// Prefix header for all source files of the 'MKTowerDefence' target in the 'MKTowerDefence' project.
 //
 
 #import <Availability.h>

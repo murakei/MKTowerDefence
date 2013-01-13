@@ -8,6 +8,9 @@
 
 #import "MKAppDelegate.h"
 
+/**
+ * 本プロジェクト内では直接編集することはない
+ */
 @implementation MKAppDelegate
 
 - (void)dealloc
