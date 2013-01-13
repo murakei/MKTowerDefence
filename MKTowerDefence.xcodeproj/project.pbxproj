@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42C47DA216A2E8230013306E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA116A2E8230013306E /* UIKit.framework */; };
+		42C47DA416A2E8230013306E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA316A2E8230013306E /* Foundation.framework */; };
+		42C47DA616A2E8230013306E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA516A2E8230013306E /* CoreGraphics.framework */; };
+		42C47DAC16A2E8230013306E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DAA16A2E8230013306E /* InfoPlist.strings */; };
+		42C47DAE16A2E8230013306E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C47DAD16A2E8230013306E /* main.m */; };
+		42C47DB216A2E8230013306E /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C47DB116A2E8230013306E /* MKAppDelegate.m */; };
+		42C47DB416A2E8230013306E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DB316A2E8230013306E /* Default.png */; };
+		42C47DB616A2E8230013306E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DB516A2E8230013306E /* Default@2x.png */; };
+		42C47DB816A2E8230013306E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DB716A2E8230013306E /* Default-568h@2x.png */; };
+		42C47DC016A2E8230013306E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DBF16A2E8230013306E /* SenTestingKit.framework */; };
+		42C47DC116A2E8230013306E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA116A2E8230013306E /* UIKit.framework */; };
+		42C47DC216A2E8230013306E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA316A2E8230013306E /* Foundation.framework */; };
+		42C47DCA16A2E8230013306E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DC816A2E8230013306E /* InfoPlist.strings */; };
+		42C47DCD16A2E8230013306E /* MKTowerDefenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C47DCC16A2E8230013306E /* MKTowerDefenceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42C47DC316A2E8230013306E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42C47D9416A2E8230013306E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42C47D9C16A2E8230013306E;
+			remoteInfo = MKTowerDefence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42C47D9D16A2E8230013306E /* MKTowerDefence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKTowerDefence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C47DA116A2E8230013306E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42C47DA316A2E8230013306E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42C47DA516A2E8230013306E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42C47DA916A2E8230013306E /* MKTowerDefence-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKTowerDefence-Info.plist"; sourceTree = "<group>"; };
+		42C47DAB16A2E8230013306E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42C47DAD16A2E8230013306E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42C47DAF16A2E8230013306E /* MKTowerDefence-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKTowerDefence-Prefix.pch"; sourceTree = "<group>"; };
+		42C47DB016A2E8230013306E /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
+		42C47DB116A2E8230013306E /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
+		42C47DB316A2E8230013306E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		42C47DB516A2E8230013306E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		42C47DB716A2E8230013306E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		42C47DBE16A2E8230013306E /* MKTowerDefenceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKTowerDefenceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C47DBF16A2E8230013306E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		42C47DC716A2E8230013306E /* MKTowerDefenceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKTowerDefenceTests-Info.plist"; sourceTree = "<group>"; };
+		42C47DC916A2E8230013306E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42C47DCB16A2E8230013306E /* MKTowerDefenceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTowerDefenceTests.h; sourceTree = "<group>"; };
+		42C47DCC16A2E8230013306E /* MKTowerDefenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTowerDefenceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42C47D9A16A2E8230013306E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C47DA216A2E8230013306E /* UIKit.framework in Frameworks */,
+				42C47DA416A2E8230013306E /* Foundation.framework in Frameworks */,
+				42C47DA616A2E8230013306E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C47DBA16A2E8230013306E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C47DC016A2E8230013306E /* SenTestingKit.framework in Frameworks */,
+				42C47DC116A2E8230013306E /* UIKit.framework in Frameworks */,
+				42C47DC216A2E8230013306E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42C47D9216A2E8230013306E = {
+			isa = PBXGroup;
+			children = (
+				42C47DA716A2E8230013306E /* MKTowerDefence */,
+				42C47DC516A2E8230013306E /* MKTowerDefenceTests */,
+				42C47DA016A2E8230013306E /* Frameworks */,
+				42C47D9E16A2E8230013306E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42C47D9E16A2E8230013306E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42C47D9D16A2E8230013306E /* MKTowerDefence.app */,
+				42C47DBE16A2E8230013306E /* MKTowerDefenceTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42C47DA016A2E8230013306E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C47DA116A2E8230013306E /* UIKit.framework */,
+				42C47DA316A2E8230013306E /* Foundation.framework */,
+				42C47DA516A2E8230013306E /* CoreGraphics.framework */,
+				42C47DBF16A2E8230013306E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C47DA716A2E8230013306E /* MKTowerDefence */ = {
+			isa = PBXGroup;
+			children = (
+				42C47DB016A2E8230013306E /* MKAppDelegate.h */,
+				42C47DB116A2E8230013306E /* MKAppDelegate.m */,
+				42C47DA816A2E8230013306E /* Supporting Files */,
+			);
+			path = MKTowerDefence;
+			sourceTree = "<group>";
+		};
+		42C47DA816A2E8230013306E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42C47DA916A2E8230013306E /* MKTowerDefence-Info.plist */,
+				42C47DAA16A2E8230013306E /* InfoPlist.strings */,
+				42C47DAD16A2E8230013306E /* main.m */,
+				42C47DAF16A2E8230013306E /* MKTowerDefence-Prefix.pch */,
+				42C47DB316A2E8230013306E /* Default.png */,
+				42C47DB516A2E8230013306E /* Default@2x.png */,
+				42C47DB716A2E8230013306E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42C47DC516A2E8230013306E /* MKTowerDefenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				42C47DCB16A2E8230013306E /* MKTowerDefenceTests.h */,
+				42C47DCC16A2E8230013306E /* MKTowerDefenceTests.m */,
+				42C47DC616A2E8230013306E /* Supporting Files */,
+			);
+			path = MKTowerDefenceTests;
+			sourceTree = "<group>";
+		};
+		42C47DC616A2E8230013306E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42C47DC716A2E8230013306E /* MKTowerDefenceTests-Info.plist */,
+				42C47DC816A2E8230013306E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42C47D9C16A2E8230013306E /* MKTowerDefence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C47DD016A2E8230013306E /* Build configuration list for PBXNativeTarget "MKTowerDefence" */;
+			buildPhases = (
+				42C47D9916A2E8230013306E /* Sources */,
+				42C47D9A16A2E8230013306E /* Frameworks */,
+				42C47D9B16A2E8230013306E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKTowerDefence;
+			productName = MKTowerDefence;
+			productReference = 42C47D9D16A2E8230013306E /* MKTowerDefence.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42C47DBD16A2E8230013306E /* MKTowerDefenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C47DD316A2E8230013306E /* Build configuration list for PBXNativeTarget "MKTowerDefenceTests" */;
+			buildPhases = (
+				42C47DB916A2E8230013306E /* Sources */,
+				42C47DBA16A2E8230013306E /* Frameworks */,
+				42C47DBB16A2E8230013306E /* Resources */,
+				42C47DBC16A2E8230013306E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42C47DC416A2E8230013306E /* PBXTargetDependency */,
+			);
+			name = MKTowerDefenceTests;
+			productName = MKTowerDefenceTests;
+			productReference = 42C47DBE16A2E8230013306E /* MKTowerDefenceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42C47D9416A2E8230013306E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MK;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Murakei;
+			};
+			buildConfigurationList = 42C47D9716A2E8230013306E /* Build configuration list for PBXProject "MKTowerDefence" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42C47D9216A2E8230013306E;
+			productRefGroup = 42C47D9E16A2E8230013306E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42C47D9C16A2E8230013306E /* MKTowerDefence */,
+				42C47DBD16A2E8230013306E /* MKTowerDefenceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42C47D9B16A2E8230013306E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C47DAC16A2E8230013306E /* InfoPlist.strings in Resources */,
+				42C47DB416A2E8230013306E /* Default.png in Resources */,
+				42C47DB616A2E8230013306E /* Default@2x.png in Resources */,
+				42C47DB816A2E8230013306E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C47DBB16A2E8230013306E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C47DCA16A2E8230013306E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42C47DBC16A2E8230013306E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42C47D9916A2E8230013306E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C47DAE16A2E8230013306E /* main.m in Sources */,
+				42C47DB216A2E8230013306E /* MKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C47DB916A2E8230013306E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C47DCD16A2E8230013306E /* MKTowerDefenceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42C47DC416A2E8230013306E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42C47D9C16A2E8230013306E /* MKTowerDefence */;
+			targetProxy = 42C47DC316A2E8230013306E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42C47DAA16A2E8230013306E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42C47DAB16A2E8230013306E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42C47DC816A2E8230013306E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42C47DC916A2E8230013306E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42C47DCE16A2E8230013306E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42C47DCF16A2E8230013306E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42C47DD116A2E8230013306E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKTowerDefence/MKTowerDefence-Prefix.pch";
+				INFOPLIST_FILE = "MKTowerDefence/MKTowerDefence-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42C47DD216A2E8230013306E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKTowerDefence/MKTowerDefence-Prefix.pch";
+				INFOPLIST_FILE = "MKTowerDefence/MKTowerDefence-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42C47DD416A2E8230013306E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MKTowerDefence.app/MKTowerDefence";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKTowerDefence/MKTowerDefence-Prefix.pch";
+				INFOPLIST_FILE = "MKTowerDefenceTests/MKTowerDefenceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		42C47DD516A2E8230013306E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MKTowerDefence.app/MKTowerDefence";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKTowerDefence/MKTowerDefence-Prefix.pch";
+				INFOPLIST_FILE = "MKTowerDefenceTests/MKTowerDefenceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42C47D9716A2E8230013306E /* Build configuration list for PBXProject "MKTowerDefence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C47DCE16A2E8230013306E /* Debug */,
+				42C47DCF16A2E8230013306E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C47DD016A2E8230013306E /* Build configuration list for PBXNativeTarget "MKTowerDefence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C47DD116A2E8230013306E /* Debug */,
+				42C47DD216A2E8230013306E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42C47DD316A2E8230013306E /* Build configuration list for PBXNativeTarget "MKTowerDefenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C47DD416A2E8230013306E /* Debug */,
+				42C47DD516A2E8230013306E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42C47D9416A2E8230013306E /* Project object */;
+}
