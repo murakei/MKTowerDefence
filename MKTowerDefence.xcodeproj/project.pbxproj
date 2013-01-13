@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42BADF1416A31C7D0040C77F /* MKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1316A31C7D0040C77F /* MKPoint.m */; };
+		42BADF1916A31DC10040C77F /* MKPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1816A31DC10040C77F /* MKPointTests.m */; };
+		42BADF1C16A31F590040C77F /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1B16A31F590040C77F /* MKAppDelegate.m */; };
 		42C47DA216A2E8230013306E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA116A2E8230013306E /* UIKit.framework */; };
 		42C47DA416A2E8230013306E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA316A2E8230013306E /* Foundation.framework */; };
 		42C47DA616A2E8230013306E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA516A2E8230013306E /* CoreGraphics.framework */; };
 		42C47DAC16A2E8230013306E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DAA16A2E8230013306E /* InfoPlist.strings */; };
 		42C47DAE16A2E8230013306E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C47DAD16A2E8230013306E /* main.m */; };
-		42C47DB216A2E8230013306E /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C47DB116A2E8230013306E /* MKAppDelegate.m */; };
 		42C47DB416A2E8230013306E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DB316A2E8230013306E /* Default.png */; };
 		42C47DB616A2E8230013306E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DB516A2E8230013306E /* Default@2x.png */; };
 		42C47DB816A2E8230013306E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DB716A2E8230013306E /* Default-568h@2x.png */; };
@@ -20,7 +22,6 @@
 		42C47DC116A2E8230013306E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA116A2E8230013306E /* UIKit.framework */; };
 		42C47DC216A2E8230013306E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47DA316A2E8230013306E /* Foundation.framework */; };
 		42C47DCA16A2E8230013306E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42C47DC816A2E8230013306E /* InfoPlist.strings */; };
-		42C47DCD16A2E8230013306E /* MKTowerDefenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C47DCC16A2E8230013306E /* MKTowerDefenceTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42BADF1216A31C7D0040C77F /* MKPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPoint.h; path = Classes/Core/Shared/MKPoint.h; sourceTree = "<group>"; };
+		42BADF1316A31C7D0040C77F /* MKPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKPoint.m; path = Classes/Core/Shared/MKPoint.m; sourceTree = "<group>"; };
+		42BADF1716A31DC10040C77F /* MKPointTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPointTests.h; path = Classes/Core/Shared/MKPointTests.h; sourceTree = "<group>"; };
+		42BADF1816A31DC10040C77F /* MKPointTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKPointTests.m; path = Classes/Core/Shared/MKPointTests.m; sourceTree = "<group>"; };
+		42BADF1A16A31F590040C77F /* MKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
+		42BADF1B16A31F590040C77F /* MKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
 		42C47D9D16A2E8230013306E /* MKTowerDefence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKTowerDefence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C47DA116A2E8230013306E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42C47DA316A2E8230013306E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,8 +49,6 @@
 		42C47DAB16A2E8230013306E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42C47DAD16A2E8230013306E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42C47DAF16A2E8230013306E /* MKTowerDefence-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKTowerDefence-Prefix.pch"; sourceTree = "<group>"; };
-		42C47DB016A2E8230013306E /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
-		42C47DB116A2E8230013306E /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
 		42C47DB316A2E8230013306E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		42C47DB516A2E8230013306E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		42C47DB716A2E8230013306E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -51,8 +56,6 @@
 		42C47DBF16A2E8230013306E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		42C47DC716A2E8230013306E /* MKTowerDefenceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKTowerDefenceTests-Info.plist"; sourceTree = "<group>"; };
 		42C47DC916A2E8230013306E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		42C47DCB16A2E8230013306E /* MKTowerDefenceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTowerDefenceTests.h; sourceTree = "<group>"; };
-		42C47DCC16A2E8230013306E /* MKTowerDefenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTowerDefenceTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42BADF0D16A31C0C0040C77F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42BADF1016A31C2D0040C77F /* Core */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		42BADF0F16A31C120040C77F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42BADF1516A31D9E0040C77F /* Core */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		42BADF1016A31C2D0040C77F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				42BADF1116A31C3F0040C77F /* Shared */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		42BADF1116A31C3F0040C77F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				42BADF1216A31C7D0040C77F /* MKPoint.h */,
+				42BADF1316A31C7D0040C77F /* MKPoint.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		42BADF1516A31D9E0040C77F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				42BADF1616A31DA40040C77F /* Shared */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		42BADF1616A31DA40040C77F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				42BADF1716A31DC10040C77F /* MKPointTests.h */,
+				42BADF1816A31DC10040C77F /* MKPointTests.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		42C47D9216A2E8230013306E = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +165,9 @@
 		42C47DA716A2E8230013306E /* MKTowerDefence */ = {
 			isa = PBXGroup;
 			children = (
-				42C47DB016A2E8230013306E /* MKAppDelegate.h */,
-				42C47DB116A2E8230013306E /* MKAppDelegate.m */,
+				42BADF1A16A31F590040C77F /* MKAppDelegate.h */,
+				42BADF1B16A31F590040C77F /* MKAppDelegate.m */,
+				42BADF0D16A31C0C0040C77F /* Classes */,
 				42C47DA816A2E8230013306E /* Supporting Files */,
 			);
 			path = MKTowerDefence;
@@ -136,8 +190,7 @@
 		42C47DC516A2E8230013306E /* MKTowerDefenceTests */ = {
 			isa = PBXGroup;
 			children = (
-				42C47DCB16A2E8230013306E /* MKTowerDefenceTests.h */,
-				42C47DCC16A2E8230013306E /* MKTowerDefenceTests.m */,
+				42BADF0F16A31C120040C77F /* Classes */,
 				42C47DC616A2E8230013306E /* Supporting Files */,
 			);
 			path = MKTowerDefenceTests;
@@ -263,7 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C47DAE16A2E8230013306E /* main.m in Sources */,
-				42C47DB216A2E8230013306E /* MKAppDelegate.m in Sources */,
+				42BADF1416A31C7D0040C77F /* MKPoint.m in Sources */,
+				42BADF1C16A31F590040C77F /* MKAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C47DCD16A2E8230013306E /* MKTowerDefenceTests.m in Sources */,
+				42BADF1916A31DC10040C77F /* MKPointTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +484,7 @@
 				42C47DD216A2E8230013306E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42C47DD316A2E8230013306E /* Build configuration list for PBXNativeTarget "MKTowerDefenceTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +493,7 @@
 				42C47DD516A2E8230013306E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
