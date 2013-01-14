@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429ED9AE16A38F02004F81EE /* MKMoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9AD16A38F02004F81EE /* MKMoveObject.m */; };
+		429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */; };
 		42BADF1416A31C7D0040C77F /* MKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1316A31C7D0040C77F /* MKPoint.m */; };
 		42BADF1916A31DC10040C77F /* MKPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1816A31DC10040C77F /* MKPointTests.m */; };
 		42BADF1C16A31F590040C77F /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1B16A31F590040C77F /* MKAppDelegate.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		429ED9AC16A38F02004F81EE /* MKMoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObject.h; path = Classes/Core/Shared/MKMoveObject.h; sourceTree = "<group>"; };
+		429ED9AD16A38F02004F81EE /* MKMoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKMoveObject.m; path = Classes/Core/Shared/MKMoveObject.m; sourceTree = "<group>"; };
+		429ED9B016A38F69004F81EE /* MKMoveObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObjectTest.h; path = Classes/Core/Shared/MKMoveObjectTest.h; sourceTree = "<group>"; };
+		429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKMoveObjectTest.m; path = Classes/Core/Shared/MKMoveObjectTest.m; sourceTree = "<group>"; };
 		42BADF1216A31C7D0040C77F /* MKPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPoint.h; path = Classes/Core/Shared/MKPoint.h; sourceTree = "<group>"; };
 		42BADF1316A31C7D0040C77F /* MKPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKPoint.m; path = Classes/Core/Shared/MKPoint.m; sourceTree = "<group>"; };
 		42BADF1716A31DC10040C77F /* MKPointTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPointTests.h; path = Classes/Core/Shared/MKPointTests.h; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 			children = (
 				42BADF1216A31C7D0040C77F /* MKPoint.h */,
 				42BADF1316A31C7D0040C77F /* MKPoint.m */,
+				429ED9AC16A38F02004F81EE /* MKMoveObject.h */,
+				429ED9AD16A38F02004F81EE /* MKMoveObject.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -128,6 +136,8 @@
 			children = (
 				42BADF1716A31DC10040C77F /* MKPointTests.h */,
 				42BADF1816A31DC10040C77F /* MKPointTests.m */,
+				429ED9B016A38F69004F81EE /* MKMoveObjectTest.h */,
+				429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -318,6 +328,7 @@
 				42C47DAE16A2E8230013306E /* main.m in Sources */,
 				42BADF1416A31C7D0040C77F /* MKPoint.m in Sources */,
 				42BADF1C16A31F590040C77F /* MKAppDelegate.m in Sources */,
+				429ED9AE16A38F02004F81EE /* MKMoveObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42BADF1916A31DC10040C77F /* MKPointTests.m in Sources */,
+				429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
