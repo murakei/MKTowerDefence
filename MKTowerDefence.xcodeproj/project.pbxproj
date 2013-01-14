@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		429ED9AE16A38F02004F81EE /* MKMoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9AD16A38F02004F81EE /* MKMoveObject.m */; };
 		429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */; };
+		42B063B616A42A8F00D23975 /* MKCreep.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063B516A42A8F00D23975 /* MKCreep.m */; };
+		42B063B916A42C4700D23975 /* MKCreepTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063B816A42C4700D23975 /* MKCreepTest.m */; };
+		42B063BE16A42DD400D23975 /* MKCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063BD16A42DD400D23975 /* MKCourse.m */; };
+		42B063C116A4370100D23975 /* MKCourseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063C016A4370100D23975 /* MKCourseTest.m */; };
+		42B063C416A43BEA00D23975 /* MKCreepFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063C316A43BEA00D23975 /* MKCreepFactory.m */; };
+		42B063C816A44D7800D23975 /* MKCreepRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063C716A44D7800D23975 /* MKCreepRepository.m */; };
+		42B063CD16A44F6C00D23975 /* MKTower.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063CC16A44F6C00D23975 /* MKTower.m */; };
 		42BADF1416A31C7D0040C77F /* MKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1316A31C7D0040C77F /* MKPoint.m */; };
 		42BADF1916A31DC10040C77F /* MKPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1816A31DC10040C77F /* MKPointTests.m */; };
 		42BADF1C16A31F590040C77F /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BADF1B16A31F590040C77F /* MKAppDelegate.m */; };
@@ -41,6 +48,21 @@
 		429ED9AD16A38F02004F81EE /* MKMoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKMoveObject.m; path = Classes/Core/Shared/MKMoveObject.m; sourceTree = "<group>"; };
 		429ED9B016A38F69004F81EE /* MKMoveObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObjectTest.h; path = Classes/Core/Shared/MKMoveObjectTest.h; sourceTree = "<group>"; };
 		429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKMoveObjectTest.m; path = Classes/Core/Shared/MKMoveObjectTest.m; sourceTree = "<group>"; };
+		42B063B416A42A8F00D23975 /* MKCreep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKCreep.h; path = Classes/Core/Creep/MKCreep.h; sourceTree = "<group>"; };
+		42B063B516A42A8F00D23975 /* MKCreep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKCreep.m; path = Classes/Core/Creep/MKCreep.m; sourceTree = "<group>"; };
+		42B063B716A42C4700D23975 /* MKCreepTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKCreepTest.h; path = Classes/Core/Creep/MKCreepTest.h; sourceTree = "<group>"; };
+		42B063B816A42C4700D23975 /* MKCreepTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKCreepTest.m; path = Classes/Core/Creep/MKCreepTest.m; sourceTree = "<group>"; };
+		42B063BC16A42DD400D23975 /* MKCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKCourse.h; path = Classes/Core/Course/MKCourse.h; sourceTree = "<group>"; };
+		42B063BD16A42DD400D23975 /* MKCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKCourse.m; path = Classes/Core/Course/MKCourse.m; sourceTree = "<group>"; };
+		42B063BF16A4370100D23975 /* MKCourseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKCourseTest.h; path = Classes/Core/Course/MKCourseTest.h; sourceTree = "<group>"; };
+		42B063C016A4370100D23975 /* MKCourseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKCourseTest.m; path = Classes/Core/Course/MKCourseTest.m; sourceTree = "<group>"; };
+		42B063C216A43BEA00D23975 /* MKCreepFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKCreepFactory.h; path = Classes/Core/Creep/MKCreepFactory.h; sourceTree = "<group>"; };
+		42B063C316A43BEA00D23975 /* MKCreepFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKCreepFactory.m; path = Classes/Core/Creep/MKCreepFactory.m; sourceTree = "<group>"; };
+		42B063C516A44D5B00D23975 /* MKCreepProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKCreepProtocol.h; path = Classes/Core/Creep/MKCreepProtocol.h; sourceTree = "<group>"; };
+		42B063C616A44D7800D23975 /* MKCreepRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKCreepRepository.h; path = Classes/Core/Creep/MKCreepRepository.h; sourceTree = "<group>"; };
+		42B063C716A44D7800D23975 /* MKCreepRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKCreepRepository.m; path = Classes/Core/Creep/MKCreepRepository.m; sourceTree = "<group>"; };
+		42B063CB16A44F6C00D23975 /* MKTower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKTower.h; path = Classes/Core/Tower/MKTower.h; sourceTree = "<group>"; };
+		42B063CC16A44F6C00D23975 /* MKTower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKTower.m; path = Classes/Core/Tower/MKTower.m; sourceTree = "<group>"; };
 		42BADF1216A31C7D0040C77F /* MKPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPoint.h; path = Classes/Core/Shared/MKPoint.h; sourceTree = "<group>"; };
 		42BADF1316A31C7D0040C77F /* MKPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKPoint.m; path = Classes/Core/Shared/MKPoint.m; sourceTree = "<group>"; };
 		42BADF1716A31DC10040C77F /* MKPointTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKPointTests.h; path = Classes/Core/Shared/MKPointTests.h; sourceTree = "<group>"; };
@@ -88,6 +110,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B063B116A42A4600D23975 /* Creep */ = {
+			isa = PBXGroup;
+			children = (
+				42B063C516A44D5B00D23975 /* MKCreepProtocol.h */,
+				42B063B416A42A8F00D23975 /* MKCreep.h */,
+				42B063B516A42A8F00D23975 /* MKCreep.m */,
+				42B063C216A43BEA00D23975 /* MKCreepFactory.h */,
+				42B063C316A43BEA00D23975 /* MKCreepFactory.m */,
+				42B063C616A44D7800D23975 /* MKCreepRepository.h */,
+				42B063C716A44D7800D23975 /* MKCreepRepository.m */,
+			);
+			name = Creep;
+			sourceTree = "<group>";
+		};
+		42B063B316A42A4D00D23975 /* Creep */ = {
+			isa = PBXGroup;
+			children = (
+				42B063B716A42C4700D23975 /* MKCreepTest.h */,
+				42B063B816A42C4700D23975 /* MKCreepTest.m */,
+			);
+			name = Creep;
+			sourceTree = "<group>";
+		};
+		42B063BA16A42D5500D23975 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				42B063BC16A42DD400D23975 /* MKCourse.h */,
+				42B063BD16A42DD400D23975 /* MKCourse.m */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		42B063BB16A42D5D00D23975 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				42B063BF16A4370100D23975 /* MKCourseTest.h */,
+				42B063C016A4370100D23975 /* MKCourseTest.m */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		42B063C916A44F3E00D23975 /* Tower */ = {
+			isa = PBXGroup;
+			children = (
+				42B063CB16A44F6C00D23975 /* MKTower.h */,
+				42B063CC16A44F6C00D23975 /* MKTower.m */,
+			);
+			name = Tower;
+			sourceTree = "<group>";
+		};
+		42B063CA16A44F4600D23975 /* Tower */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tower;
+			sourceTree = "<group>";
+		};
 		42BADF0D16A31C0C0040C77F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +186,9 @@
 		42BADF1016A31C2D0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				42B063C916A44F3E00D23975 /* Tower */,
+				42B063BA16A42D5500D23975 /* Course */,
+				42B063B116A42A4600D23975 /* Creep */,
 				42BADF1116A31C3F0040C77F /* Shared */,
 			);
 			name = Core;
@@ -126,6 +208,9 @@
 		42BADF1516A31D9E0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				42B063CA16A44F4600D23975 /* Tower */,
+				42B063BB16A42D5D00D23975 /* Course */,
+				42B063B316A42A4D00D23975 /* Creep */,
 				42BADF1616A31DA40040C77F /* Shared */,
 			);
 			name = Core;
@@ -329,6 +414,11 @@
 				42BADF1416A31C7D0040C77F /* MKPoint.m in Sources */,
 				42BADF1C16A31F590040C77F /* MKAppDelegate.m in Sources */,
 				429ED9AE16A38F02004F81EE /* MKMoveObject.m in Sources */,
+				42B063B616A42A8F00D23975 /* MKCreep.m in Sources */,
+				42B063BE16A42DD400D23975 /* MKCourse.m in Sources */,
+				42B063C416A43BEA00D23975 /* MKCreepFactory.m in Sources */,
+				42B063C816A44D7800D23975 /* MKCreepRepository.m in Sources */,
+				42B063CD16A44F6C00D23975 /* MKTower.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +428,8 @@
 			files = (
 				42BADF1916A31DC10040C77F /* MKPointTests.m in Sources */,
 				429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */,
+				42B063B916A42C4700D23975 /* MKCreepTest.m in Sources */,
+				42B063C116A4370100D23975 /* MKCourseTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

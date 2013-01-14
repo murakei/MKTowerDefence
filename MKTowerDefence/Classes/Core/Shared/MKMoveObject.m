@@ -2,7 +2,7 @@
 //  MKMoveObject.m
 //  MKTowerDefence
 //
-//  Created by Muradome on 2013/01/14.
+//  Created by Murakei on 2013/01/14.
 //  Copyright (c) 2013年 Murakei. All rights reserved.
 //
 
@@ -13,6 +13,19 @@
 @synthesize speed;
 @synthesize rotateSpeed;
 
+- (id)init {
+    if (self = [super init]) {
+        _currentPoint = nil;
+        _targetPoint = nil;
+        speed = 1;
+        dx = 0;
+        dy = 0;
+        currentAngle = 0;
+        targetAngle = 0;
+        rotateSpeed = 1;
+    }
+    return self;
+}
 /**
  * ターゲットに向かってスピードに応じた距離を移動します
  * 新たにPointを生成する方法もあるが、メモリ管理に不安があるので座標を変更する.
@@ -62,7 +75,7 @@
 }
 /**
  * 現在位置を返す
- * @param point 設定する座標
+ * @return (MKPoint *)現在位置
  */
 - (MKPoint *)currentPoint {
     return [_currentPoint copy];
@@ -73,6 +86,13 @@
  */
 - (void)setTargetPoint:(MKPoint *)point {
     _targetPoint = [point copy];
+}
+/**
+ * 目標位置を返す
+ * @return (MKPoint *)目標位置
+ */
+- (MKPoint *)targetPoint {
+    return [_targetPoint copy];
 }
 /**
  * 移動量を計算する

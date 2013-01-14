@@ -1,5 +1,5 @@
 //
-//  MKMoveObjectTest.h
+//  MKCreepTest.h
 //  MKTowerDefence
 //
 //  Created by Murakei on 2013/01/14.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface MKMoveObjectTest : SenTestCase
+@interface MKCreepTest : SenTestCase
 
 @end

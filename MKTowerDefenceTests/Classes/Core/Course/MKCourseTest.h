@@ -1,5 +1,5 @@
 //
-//  MKMoveObjectTest.h
+//  MKCourseTest.h
 //  MKTowerDefence
 //
 //  Created by Murakei on 2013/01/14.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface MKMoveObjectTest : SenTestCase
+@interface MKCourseTest : SenTestCase
 
 @end

@@ -2,7 +2,7 @@
 //  MKMoveObject.h
 //  MKTowerDefence
 //
-//  Created by Muradome on 2013/01/14.
+//  Created by Murakei on 2013/01/14.
 //  Copyright (c) 2013年 Murakei. All rights reserved.
 //
 
@@ -62,7 +62,7 @@
 - (void)setCurrentPoint:(MKPoint *)point;
 /**
  * 現在位置を返す
- * @param point 設定する座標
+ * @return (MKPoint *)現在位置
  */
 - (MKPoint *)currentPoint;
 /**
@@ -70,6 +70,11 @@
  * @param point 設定する目標位置の座標
  */
 - (void)setTargetPoint:(MKPoint *)point;
+/**
+ * 目標位置を返す
+ * @return (MKPoint *)目標位置
+ */
+- (MKPoint *)targetPoint;
 /**
  * 移動量を計算する
  */
