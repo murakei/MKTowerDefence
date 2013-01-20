@@ -24,6 +24,12 @@
 
 @implementation MKTower
 
+@synthesize creepRepository = _creepRepository;
+@synthesize range = _range;
+@synthesize towerId;
+@synthesize shootCounterMax = _shootCounterMax;
+@synthesize shootCounter = _shootCounter;
+
 - (id)init {
     if (self = [super init]) {
         [self setCurrentPoint:[MKPoint createWithX:0 andY:0]];
@@ -56,26 +62,6 @@
     }
     return [[MKProjectile alloc] init];
 }
-/**
- * 一意に識別するIDを返します
- */
-- (int)towerId {
-    return towerId;
-}
-/**
- * 射程距離を設定します
- */
-- (void)setRange:(float)range {
-    _range = range;
-}
-/**
- * Creepリポジトリへのリンクを設定する
- */
-- (void)setCreepRepository:(MKCreepRepository *)creepRepository {
-    _creepRepository = creepRepository;
-}
-
-
 
 /**
  * 射程距離圏内のCreepを取得する

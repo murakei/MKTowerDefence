@@ -42,9 +42,10 @@
     BOOL exploded;
 }
 
-/**
- * Creepリポジトリへのリンクを設定する
- */
-- (void)setCreepRepository:(MKCreepRepository *)creepRepository;
+@property(nonatomic, assign) id<MKTowerProtocol> tower;
+@property(nonatomic, assign) MKCreepRepository *creepRepository;
+@property(nonatomic, assign) float range;
+@property(nonatomic, assign) int damage;
+@property(nonatomic, assign) BOOL exploded;
 
 @end

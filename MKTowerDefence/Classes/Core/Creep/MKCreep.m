@@ -11,6 +11,9 @@
 @implementation MKCreep
 
 @synthesize creepId;
+@synthesize course = _course;
+@synthesize reachFinalDestination;
+@synthesize currentHp;
 
 - (id)init {
     if (self = [super init]) {
@@ -18,13 +21,6 @@
         currentHp = 1;
     }
     return self;
-}
-/**
- * Creepが移動するコースを設定する.
- * 原則、Creep生成直後に設定し、変更することはない.
- */
-- (void)setCourse:(MKCourse *)course {
-    _course = course;
 }
 /**
  * Creepを初期位置に設定する.
@@ -41,7 +37,6 @@
     [self rotate];
     [self calcMovement];
 }
-
 /**
  * 動作を行う.
  * 動作内容は与えられたコースなどによる.

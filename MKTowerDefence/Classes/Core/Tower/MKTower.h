@@ -33,15 +33,20 @@
      * Tower一意に識別するIDを返します
      */
     int towerId;
+    /**
+     * 弾を撃つまでのカウンタの最大値
+     */
+    int _shootCounterMax;
+    /**
+     * 弾を撃つまでのカウンタ
+     */
+    int _shootCounter;
 }
 
-/**
- * 射程距離を設定する
- */
-- (void)setRange:(float)range;
-/**
- * Creepリポジトリへのリンクを設定する
- */
-- (void)setCreepRepository:(MKCreepRepository *)creepRepository;
+@property(nonatomic, assign) MKCreepRepository *creepRepository;
+@property(nonatomic, assign) float range;
+@property(nonatomic, assign) int towerId;
+@property(nonatomic, assign) int shootCounterMax;
+@property(nonatomic, assign) int shootCounter;
 
 @end

@@ -10,6 +10,12 @@
 
 @implementation MKProjectile
 
+@synthesize tower = _tower;
+@synthesize creepRepository = _creepRepository;
+@synthesize range = _range;
+@synthesize damage = _damage;
+@synthesize exploded;
+
 - (id)init {
     if (self = [super init]) {
         [self setCurrentPoint:[MKPoint createWithX:0 andY:0]];
@@ -48,12 +54,6 @@
     exploded = bomb;
 }
 /**
- * 弾が爆発したか否か返します
- */
-- (BOOL)exploded {
-    return exploded;
-}
-/**
  * @override
  */
 - (void)setTargetPoint:(MKPoint *)point {
@@ -61,24 +61,6 @@
     [self calcAngle];
     [self rotate];
     [self calcMovement];
-}
-/**
- * Creepリポジトリへのリンクを設定する
- */
-- (void)setCreepRepository:(MKCreepRepository *)creepRepository {
-    _creepRepository = creepRepository;
-}
-/**
- * ダメージ値を設定する
- */
-- (void)setDamage:(int)damage {
-    _damage = damage;
-}
-/**
- * 射程距離を設定する
- */
-- (void)setRange:(float)range {
-    _range = range;
 }
 
 @end
