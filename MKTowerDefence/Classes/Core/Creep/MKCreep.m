@@ -15,6 +15,7 @@
 - (id)init {
     if (self = [super init]) {
         reachFinalDestination = NO;
+        currentHp = 1;
     }
     return self;
 }
@@ -72,5 +73,10 @@
     // 移動を行う.
     [self move];
 }
-
+/**
+ * ダメージを受ける
+ */
+- (void)damage:(int)damage {
+    currentHp -= damage;
+}
 @end

@@ -1,5 +1,5 @@
 //
-//  MKTowerTest.h
+//  MKProjectileTest.h
 //  MKTowerDefence
 //
 //  Created by Murakei on 2013/01/20.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface MKTowerTest : SenTestCase
+@interface MKProjectileTest : SenTestCase
 
 @end

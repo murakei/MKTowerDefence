@@ -7,7 +7,6 @@
 //
 
 #import "MKMoveObject.h"
-#import "MKCourse.h"
 #import "MKCreepProtocol.h"
 
 /**
@@ -29,25 +28,12 @@
      * コースの最終地点に到達しているか否かを表す
      */
     BOOL reachFinalDestination;
+    /**
+     * 現在のヒットポイント
+     */
+    int currentHp;
 }
 
 @property(nonatomic, assign) int creepId;
-
-/**
- * Creepが移動するコースを設定する.
- * 原則、Creep生成直後に設定し、変更することはない.
- */
-- (void)setCourse:(MKCourse *)course;
-/**
- * Creepを初期位置に設定する.
- * Creepを生成してすぐ表示するのは後で変更したくなるかもしれないので、
- * 生成と初期位置の設定を別メソッドにする.
- */
-- (void)setStartPoint;
-/**
- * 動作を行う.
- * 内容は与えられたコースなどによる.
- */
-- (void)action;
 
 @end
