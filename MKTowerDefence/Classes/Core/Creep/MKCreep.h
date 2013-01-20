@@ -35,7 +35,7 @@
 }
 
 @property(nonatomic, assign) int creepId;
-@property(nonatomic, assign) MKCourse *course;
+@property(nonatomic, copy) MKCourse *course;
 @property(nonatomic, assign) BOOL reachFinalDestination;
 @property(nonatomic, assign) int currentHp;
 
