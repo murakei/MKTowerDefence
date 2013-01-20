@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4208D82316AC13B300710969 /* MKTowerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D82216AC13B300710969 /* MKTowerTest.m */; };
+		4208D82E16AC198700710969 /* MKProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D82D16AC198700710969 /* MKProjectile.m */; };
 		429ED9AE16A38F02004F81EE /* MKMoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9AD16A38F02004F81EE /* MKMoveObject.m */; };
 		429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */; };
 		42B063B616A42A8F00D23975 /* MKCreep.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063B516A42A8F00D23975 /* MKCreep.m */; };
@@ -44,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4208D82116AC13B300710969 /* MKTowerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKTowerTest.h; path = Classes/Core/Tower/MKTowerTest.h; sourceTree = "<group>"; };
+		4208D82216AC13B300710969 /* MKTowerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKTowerTest.m; path = Classes/Core/Tower/MKTowerTest.m; sourceTree = "<group>"; };
+		4208D82916AC167400710969 /* MKTowerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKTowerProtocol.h; path = Classes/Core/Tower/MKTowerProtocol.h; sourceTree = "<group>"; };
+		4208D82B16AC18FE00710969 /* MKProjectileProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKProjectileProtocol.h; path = Classes/Core/Projectile/MKProjectileProtocol.h; sourceTree = "<group>"; };
+		4208D82C16AC198600710969 /* MKProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKProjectile.h; path = Classes/Core/Projectile/MKProjectile.h; sourceTree = "<group>"; };
+		4208D82D16AC198700710969 /* MKProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKProjectile.m; path = Classes/Core/Projectile/MKProjectile.m; sourceTree = "<group>"; };
 		429ED9AC16A38F02004F81EE /* MKMoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObject.h; path = Classes/Core/Shared/MKMoveObject.h; sourceTree = "<group>"; };
 		429ED9AD16A38F02004F81EE /* MKMoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKMoveObject.m; path = Classes/Core/Shared/MKMoveObject.m; sourceTree = "<group>"; };
 		429ED9B016A38F69004F81EE /* MKMoveObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObjectTest.h; path = Classes/Core/Shared/MKMoveObjectTest.h; sourceTree = "<group>"; };
@@ -110,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4208D82A16AC18E700710969 /* Projectile */ = {
+			isa = PBXGroup;
+			children = (
+				4208D82B16AC18FE00710969 /* MKProjectileProtocol.h */,
+				4208D82C16AC198600710969 /* MKProjectile.h */,
+				4208D82D16AC198700710969 /* MKProjectile.m */,
+			);
+			name = Projectile;
+			sourceTree = "<group>";
+		};
 		42B063B116A42A4600D23975 /* Creep */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +172,7 @@
 		42B063C916A44F3E00D23975 /* Tower */ = {
 			isa = PBXGroup;
 			children = (
+				4208D82916AC167400710969 /* MKTowerProtocol.h */,
 				42B063CB16A44F6C00D23975 /* MKTower.h */,
 				42B063CC16A44F6C00D23975 /* MKTower.m */,
 			);
@@ -163,6 +182,8 @@
 		42B063CA16A44F4600D23975 /* Tower */ = {
 			isa = PBXGroup;
 			children = (
+				4208D82116AC13B300710969 /* MKTowerTest.h */,
+				4208D82216AC13B300710969 /* MKTowerTest.m */,
 			);
 			name = Tower;
 			sourceTree = "<group>";
@@ -186,6 +207,7 @@
 		42BADF1016A31C2D0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4208D82A16AC18E700710969 /* Projectile */,
 				42B063C916A44F3E00D23975 /* Tower */,
 				42B063BA16A42D5500D23975 /* Course */,
 				42B063B116A42A4600D23975 /* Creep */,
@@ -419,6 +441,7 @@
 				42B063C416A43BEA00D23975 /* MKCreepFactory.m in Sources */,
 				42B063C816A44D7800D23975 /* MKCreepRepository.m in Sources */,
 				42B063CD16A44F6C00D23975 /* MKTower.m in Sources */,
+				4208D82E16AC198700710969 /* MKProjectile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +453,7 @@
 				429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */,
 				42B063B916A42C4700D23975 /* MKCreepTest.m in Sources */,
 				42B063C116A4370100D23975 /* MKCourseTest.m in Sources */,
+				4208D82316AC13B300710969 /* MKTowerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

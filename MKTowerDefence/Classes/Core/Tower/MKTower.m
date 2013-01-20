@@ -7,6 +7,7 @@
 //
 
 #import "MKTower.h"
+#import "MKProjectile.h"
 
 @interface MKTower()
 
@@ -23,6 +24,14 @@
 
 @implementation MKTower
 
+- (id)init {
+    if (self = [super init]) {
+        [self setCurrentPoint:[MKPoint createWithX:0 andY:0]];
+        [self setTargetPoint:nil];
+        towerId = 1;
+    }
+    return self;
+}
 /**
  * 動作を行う.
  * 動作内容は接近するCreepなどによる.
@@ -38,14 +47,51 @@
         [self rotate];
     }
 }
+/**
+ * 射程距離内の敵が存在する場合、弾を発射します
+ */
+- (id<MKProjectileProtocol>)shoot {
+    if ([self targetPoint] == nil) {
+        return nil;
+    }
+    return [[MKProjectile alloc] init];
+}
+/**
+ * 一意に識別するIDを返します
+ */
+- (int)towerId {
+    return towerId;
+}
+/**
+ * 射程距離を設定します
+ */
+- (void)setRange:(float)range {
+    _range = range;
+}
+/**
+ * Creepリポジトリへのリンクを設定する
+ */
+- (void)setCreepRepository:(MKCreepRepository *)creepRepository {
+    _creepRepository = creepRepository;
+}
+
+
+
+/**
+ * 射程距離圏内のCreepを取得する
+ * @return Creep一体
+ */
 - (id<MKCreepProtocol>)searchTarget {
+    if (_creepRepository == nil) {
+        return nil;
+    }
     NSArray *list = [_creepRepository findAll];
     NSMutableArray *targetList = [[NSMutableArray alloc] init];
 
     for (int i = 0; i < [list count]; i++) {
         id<MKCreepProtocol> creep = [list objectAtIndex:i];
         float distance = [[creep currentPoint] calcDistanceTo:[self currentPoint]];
-        if (range >= distance) {
+        if (_range >= distance) {
             [targetList addObject:creep];
         }
     }
@@ -54,6 +100,9 @@
     }
     return nil;
 }
+/**
+ * 射程距離圏内から取得したCreepから攻撃対象とする１体を選ぶ
+ */
 - (id<MKCreepProtocol>)pickupTarget:(NSMutableArray *)targetList {
     int targetIndex = -1;
     int minimumCreepNo = 999;

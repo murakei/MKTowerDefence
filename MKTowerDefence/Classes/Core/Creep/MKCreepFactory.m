@@ -30,9 +30,10 @@
  */
 - (MKCreep *)createWithCommand:(NSString *)command {
     MKCreep *c = [[MKCreep alloc] init];
+    c.creepId = numberOfCreepCreated;
+    [c setCourse:[_course copy]];
     
     // command により調整
-    [c setCourse:[_course copy]];
     c.speed = 1;
     c.rotateSpeed = 1;
     

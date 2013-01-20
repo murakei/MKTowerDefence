@@ -7,13 +7,14 @@
 //
 
 #import "MKMoveObject.h"
+#import "MKTowerProtocol.h"
 #import "MKCreepProtocol.h"
 #import "MKCreepRepository.h"
 
 /**
  * Creepを攻撃するTowerクラス.
  */
-@interface MKTower : MKMoveObject {
+@interface MKTower : MKMoveObject <MKTowerProtocol> {
     /**
      * 攻撃対象のCreep
      */
@@ -27,12 +28,20 @@
     /**
      * 射程距離
      */
-    float range;
+    float _range;
+    /**
+     * Tower一意に識別するIDを返します
+     */
+    int towerId;
 }
+
 /**
- * 動作を行う.
- * 動作内容は接近するCreepなどによる.
+ * 射程距離を設定する
  */
-- (void)action;
+- (void)setRange:(float)range;
+/**
+ * Creepリポジトリへのリンクを設定する
+ */
+- (void)setCreepRepository:(MKCreepRepository *)creepRepository;
 
 @end

@@ -12,6 +12,12 @@
 
 @synthesize creepId;
 
+- (id)init {
+    if (self = [super init]) {
+        reachFinalDestination = NO;
+    }
+    return self;
+}
 /**
  * Creepが移動するコースを設定する.
  * 原則、Creep生成直後に設定し、変更することはない.
@@ -19,6 +25,22 @@
 - (void)setCourse:(MKCourse *)course {
     _course = course;
 }
+/**
+ * Creepを初期位置に設定する.
+ * Creepを生成してすぐ表示するのは後で変更したくなるかもしれないので、
+ * 生成と初期位置の設定を別メソッドにする.
+ */
+- (void)setStartPoint {
+    if (_course == nil) {
+        return;
+    }
+    [self setCurrentPoint:[_course nextPoint]];
+    [self setTargetPoint:[_course nextPoint]];
+    [self calcAngle];
+    [self rotate];
+    [self calcMovement];
+}
+
 /**
  * 動作を行う.
  * 動作内容は与えられたコースなどによる.
