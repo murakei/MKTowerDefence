@@ -49,4 +49,9 @@
 @property(nonatomic, assign) int shootCounterMax;
 @property(nonatomic, assign) int shootCounter;
 
+/**
+ * コンストラクタ.Towerは現在位置必須とする
+ */
+- (id)initWithPoint:(MKPoint *)point;
+
 @end

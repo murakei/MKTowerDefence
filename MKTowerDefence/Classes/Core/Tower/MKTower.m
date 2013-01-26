@@ -30,11 +30,17 @@
 @synthesize shootCounterMax = _shootCounterMax;
 @synthesize shootCounter = _shootCounter;
 
-- (id)init {
+/**
+ * コンストラクタ.Towerは現在位置必須とする
+ */
+- (id)initWithPoint:(MKPoint *)point {
     if (self = [super init]) {
-        [self setCurrentPoint:[MKPoint createWithX:0 andY:0]];
+        [self setCurrentPoint:point];
         [self setTargetPoint:nil];
         towerId = 1;
+        _range = 10;
+        _shootCounter = 0;
+        _shootCounterMax = 10;
     }
     return self;
 }

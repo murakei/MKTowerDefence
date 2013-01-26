@@ -13,6 +13,10 @@
 		4208D83516AC2E0800710969 /* MKProjectileRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D83416AC2E0700710969 /* MKProjectileRepository.m */; };
 		4208D83816AC2F1D00710969 /* MKTowerRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D83716AC2F1C00710969 /* MKTowerRepository.m */; };
 		4208D83B16AC2FC100710969 /* MKTowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D83A16AC2FC100710969 /* MKTowerFactory.m */; };
+		425C1C9A16B379BA00822520 /* MKWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C9916B379BA00822520 /* MKWave.m */; };
+		425C1C9D16B37F1C00822520 /* MKWaveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C9C16B37F1C00822520 /* MKWaveTest.m */; };
+		425C1CA016B3826400822520 /* MKScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C9F16B3826400822520 /* MKScenario.m */; };
+		425C1CA316B3840A00822520 /* MKScenarioTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1CA216B3840A00822520 /* MKScenarioTest.m */; };
 		429ED9AE16A38F02004F81EE /* MKMoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9AD16A38F02004F81EE /* MKMoveObject.m */; };
 		429ED9B216A38F69004F81EE /* MKMoveObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 429ED9B116A38F69004F81EE /* MKMoveObjectTest.m */; };
 		42B063B616A42A8F00D23975 /* MKCreep.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B063B516A42A8F00D23975 /* MKCreep.m */; };
@@ -64,6 +68,14 @@
 		4208D83716AC2F1C00710969 /* MKTowerRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKTowerRepository.m; path = Classes/Core/Tower/MKTowerRepository.m; sourceTree = "<group>"; };
 		4208D83916AC2FC000710969 /* MKTowerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKTowerFactory.h; path = Classes/Core/Tower/MKTowerFactory.h; sourceTree = "<group>"; };
 		4208D83A16AC2FC100710969 /* MKTowerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKTowerFactory.m; path = Classes/Core/Tower/MKTowerFactory.m; sourceTree = "<group>"; };
+		425C1C9816B379BA00822520 /* MKWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKWave.h; path = Classes/Core/Scenario/MKWave.h; sourceTree = "<group>"; };
+		425C1C9916B379BA00822520 /* MKWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKWave.m; path = Classes/Core/Scenario/MKWave.m; sourceTree = "<group>"; };
+		425C1C9B16B37F1C00822520 /* MKWaveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKWaveTest.h; path = Classes/Core/Scenario/MKWaveTest.h; sourceTree = "<group>"; };
+		425C1C9C16B37F1C00822520 /* MKWaveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKWaveTest.m; path = Classes/Core/Scenario/MKWaveTest.m; sourceTree = "<group>"; };
+		425C1C9E16B3826400822520 /* MKScenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKScenario.h; path = Classes/Core/Scenario/MKScenario.h; sourceTree = "<group>"; };
+		425C1C9F16B3826400822520 /* MKScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKScenario.m; path = Classes/Core/Scenario/MKScenario.m; sourceTree = "<group>"; };
+		425C1CA116B3840A00822520 /* MKScenarioTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKScenarioTest.h; path = Classes/Core/Scenario/MKScenarioTest.h; sourceTree = "<group>"; };
+		425C1CA216B3840A00822520 /* MKScenarioTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKScenarioTest.m; path = Classes/Core/Scenario/MKScenarioTest.m; sourceTree = "<group>"; };
 		429ED9AC16A38F02004F81EE /* MKMoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObject.h; path = Classes/Core/Shared/MKMoveObject.h; sourceTree = "<group>"; };
 		429ED9AD16A38F02004F81EE /* MKMoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKMoveObject.m; path = Classes/Core/Shared/MKMoveObject.m; sourceTree = "<group>"; };
 		429ED9B016A38F69004F81EE /* MKMoveObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKMoveObjectTest.h; path = Classes/Core/Shared/MKMoveObjectTest.h; sourceTree = "<group>"; };
@@ -151,6 +163,28 @@
 			name = Projectile;
 			sourceTree = "<group>";
 		};
+		425C1C9216B3794800822520 /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				425C1C9E16B3826400822520 /* MKScenario.h */,
+				425C1C9F16B3826400822520 /* MKScenario.m */,
+				425C1C9816B379BA00822520 /* MKWave.h */,
+				425C1C9916B379BA00822520 /* MKWave.m */,
+			);
+			name = Scenario;
+			sourceTree = "<group>";
+		};
+		425C1C9416B3794E00822520 /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				425C1C9B16B37F1C00822520 /* MKWaveTest.h */,
+				425C1C9C16B37F1C00822520 /* MKWaveTest.m */,
+				425C1CA116B3840A00822520 /* MKScenarioTest.h */,
+				425C1CA216B3840A00822520 /* MKScenarioTest.m */,
+			);
+			name = Scenario;
+			sourceTree = "<group>";
+		};
 		42B063B116A42A4600D23975 /* Creep */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +268,7 @@
 		42BADF1016A31C2D0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				425C1C9216B3794800822520 /* Scenario */,
 				4208D82A16AC18E700710969 /* Projectile */,
 				42B063C916A44F3E00D23975 /* Tower */,
 				42B063BA16A42D5500D23975 /* Course */,
@@ -257,6 +292,7 @@
 		42BADF1516A31D9E0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				425C1C9416B3794E00822520 /* Scenario */,
 				4208D82F16AC1FB900710969 /* Projectile */,
 				42B063CA16A44F4600D23975 /* Tower */,
 				42B063BB16A42D5D00D23975 /* Course */,
@@ -473,6 +509,8 @@
 				4208D83516AC2E0800710969 /* MKProjectileRepository.m in Sources */,
 				4208D83816AC2F1D00710969 /* MKTowerRepository.m in Sources */,
 				4208D83B16AC2FC100710969 /* MKTowerFactory.m in Sources */,
+				425C1C9A16B379BA00822520 /* MKWave.m in Sources */,
+				425C1CA016B3826400822520 /* MKScenario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +524,8 @@
 				42B063C116A4370100D23975 /* MKCourseTest.m in Sources */,
 				4208D82316AC13B300710969 /* MKTowerTest.m in Sources */,
 				4208D83216AC1FD300710969 /* MKProjectileTest.m in Sources */,
+				425C1C9D16B37F1C00822520 /* MKWaveTest.m in Sources */,
+				425C1CA316B3840A00822520 /* MKScenarioTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,11 +16,14 @@
 @synthesize damage = _damage;
 @synthesize exploded;
 
-- (id)init {
+/**
+ * Projectileは初期位置のみ必須.
+ */
+- (id)initWithPoint:(MKPoint *)point {
     if (self = [super init]) {
-        [self setCurrentPoint:[MKPoint createWithX:0 andY:0]];
-        _damage = 0;
-        _range = 0;
+        [self setCurrentPoint:point];
+        _damage = 1;
+        _range = 1;
         exploded = NO;
     }
     return self;
@@ -32,6 +35,9 @@
  * そうでない場合は画面外に出ると消える.
  */
 - (void)action {
+    if (exploded) {
+        return;
+    }
     if ([self targetPoint] == nil) {
         return;
     }

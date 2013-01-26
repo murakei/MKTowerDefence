@@ -48,4 +48,9 @@
 @property(nonatomic, assign) int damage;
 @property(nonatomic, assign) BOOL exploded;
 
+/**
+ * Projectileは初期位置のみ必須.
+ */
+- (id)initWithPoint:(MKPoint *)point;
+
 @end
