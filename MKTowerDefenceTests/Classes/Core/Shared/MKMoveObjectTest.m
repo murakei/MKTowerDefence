@@ -54,4 +54,30 @@
     STAssertTrue([[MKPoint createWithX:10 andY:5] compareTo:[obj1 currentPoint]], @"目標が変更した場合calcAngleしなければ同じ方向に向かってspeed分移動すること");
 }
 
+- (void)testAngle {
+    MKMoveObject *obj = [[MKMoveObject alloc] init];
+    [obj setCurrentPoint:[MKPoint createWithX:0 andY:0]];
+    STAssertEquals((float) 0, [obj currentAngle], @"");
+    // ---
+    [obj setTargetPoint:[MKPoint createWithX:10 andY:0]];
+    [obj calcAngle];
+    [obj rotate];
+    STAssertEquals((float) 0, [obj currentAngle], @"");
+    // ---
+    [obj setTargetPoint:[MKPoint createWithX:0 andY:10]];
+    [obj calcAngle];
+    [obj rotate];
+    STAssertEquals((float) M_PI_2, [obj currentAngle], @"");
+    // ---
+    [obj setTargetPoint:[MKPoint createWithX:-10 andY:0]];
+    [obj calcAngle];
+    [obj rotate];
+    STAssertEquals((float) M_PI, [obj currentAngle], @"");
+    // ---
+    [obj setTargetPoint:[MKPoint createWithX:0 andY:-10]];
+    [obj calcAngle];
+    [obj rotate];
+    STAssertEquals((float) -M_PI_2, [obj currentAngle], @"");
+}
+
 @end

@@ -121,5 +121,12 @@
         targetAngle = [_currentPoint calcAngleTo:_targetPoint];
     }
 }
+/**
+ * 現在の角度を返す
+ * @return (float)現在の角度
+ */
+- (float)currentAngle {
+    return currentAngle;
+}
 
 @end

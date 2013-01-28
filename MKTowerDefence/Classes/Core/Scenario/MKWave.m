@@ -87,6 +87,9 @@
 
 @implementation MKWaveData
 
+@synthesize creepType = _creepType;
+@synthesize waitFrame = _waitFrame;
+
 /**
  * インスタンスを生成する
  * @params creepType 敵の情報

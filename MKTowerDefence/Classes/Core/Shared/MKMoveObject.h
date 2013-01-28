@@ -83,5 +83,10 @@
  * 目標角度を計算する
  */
 - (void)calcAngle;
+/**
+ * 現在の角度を返す
+ * @return (float)現在の角度
+ */
+- (float)currentAngle;
 
 @end
