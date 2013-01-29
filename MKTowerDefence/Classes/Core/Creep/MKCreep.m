@@ -74,4 +74,10 @@
 - (void)damage:(int)damage {
     currentHp -= damage;
 }
+/**
+ * 生存しているか返す
+ */
+- (BOOL)isAlive {
+    return currentHp > 0;
+}
 @end

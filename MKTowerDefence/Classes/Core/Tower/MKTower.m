@@ -40,7 +40,7 @@
         towerId = 1;
         _range = 10;
         _shootCounter = 0;
-        _shootCounterMax = 10;
+        _shootCounterMax = 20;
     }
     return self;
 }
@@ -63,10 +63,17 @@
  * 射程距離内の敵が存在する場合、弾を発射します
  */
 - (id<MKProjectileProtocol>)shoot {
+    if (_shootCounter < _shootCounterMax) {
+        _shootCounter++;
+    }
     if ([self targetPoint] == nil) {
         return nil;
     }
-    return [[MKProjectile alloc] init];
+    if (_shootCounter == _shootCounterMax) {
+        _shootCounter = 0;
+        return [[MKProjectile alloc] init];
+    }
+    return nil;
 }
 
 /**
