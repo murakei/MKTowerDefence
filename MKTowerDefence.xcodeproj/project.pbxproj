@@ -13,6 +13,9 @@
 		4208D83516AC2E0800710969 /* MKProjectileRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D83416AC2E0700710969 /* MKProjectileRepository.m */; };
 		4208D83816AC2F1D00710969 /* MKTowerRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D83716AC2F1C00710969 /* MKTowerRepository.m */; };
 		4208D83B16AC2FC100710969 /* MKTowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4208D83A16AC2FC100710969 /* MKTowerFactory.m */; };
+		420D8EDF16D2CD38006C6BB6 /* stageForTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420D8EDE16D2CD38006C6BB6 /* stageForTest.plist */; };
+		4241B65816BEFC7500343212 /* MKStageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4241B65716BEFC7500343212 /* MKStageInfo.m */; };
+		4241B65B16BEFCB800343212 /* MKStageInfoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4241B65A16BEFCB800343212 /* MKStageInfoTest.m */; };
 		425C1C9A16B379BA00822520 /* MKWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C9916B379BA00822520 /* MKWave.m */; };
 		425C1C9D16B37F1C00822520 /* MKWaveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C9C16B37F1C00822520 /* MKWaveTest.m */; };
 		425C1CA016B3826400822520 /* MKScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C9F16B3826400822520 /* MKScenario.m */; };
@@ -68,6 +71,11 @@
 		4208D83716AC2F1C00710969 /* MKTowerRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKTowerRepository.m; path = Classes/Core/Tower/MKTowerRepository.m; sourceTree = "<group>"; };
 		4208D83916AC2FC000710969 /* MKTowerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKTowerFactory.h; path = Classes/Core/Tower/MKTowerFactory.h; sourceTree = "<group>"; };
 		4208D83A16AC2FC100710969 /* MKTowerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKTowerFactory.m; path = Classes/Core/Tower/MKTowerFactory.m; sourceTree = "<group>"; };
+		420D8EDE16D2CD38006C6BB6 /* stageForTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = stageForTest.plist; path = Resources/stageForTest.plist; sourceTree = "<group>"; };
+		4241B65616BEFC7500343212 /* MKStageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKStageInfo.h; path = Classes/Core/Stage/MKStageInfo.h; sourceTree = "<group>"; };
+		4241B65716BEFC7500343212 /* MKStageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKStageInfo.m; path = Classes/Core/Stage/MKStageInfo.m; sourceTree = "<group>"; };
+		4241B65916BEFCB800343212 /* MKStageInfoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKStageInfoTest.h; path = Classes/Core/Stage/MKStageInfoTest.h; sourceTree = "<group>"; };
+		4241B65A16BEFCB800343212 /* MKStageInfoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKStageInfoTest.m; path = Classes/Core/Stage/MKStageInfoTest.m; sourceTree = "<group>"; };
 		425C1C9816B379BA00822520 /* MKWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKWave.h; path = Classes/Core/Scenario/MKWave.h; sourceTree = "<group>"; };
 		425C1C9916B379BA00822520 /* MKWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKWave.m; path = Classes/Core/Scenario/MKWave.m; sourceTree = "<group>"; };
 		425C1C9B16B37F1C00822520 /* MKWaveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKWaveTest.h; path = Classes/Core/Scenario/MKWaveTest.h; sourceTree = "<group>"; };
@@ -161,6 +169,24 @@
 				4208D83116AC1FD300710969 /* MKProjectileTest.m */,
 			);
 			name = Projectile;
+			sourceTree = "<group>";
+		};
+		4241B65416BEFC1C00343212 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				4241B65616BEFC7500343212 /* MKStageInfo.h */,
+				4241B65716BEFC7500343212 /* MKStageInfo.m */,
+			);
+			name = Stage;
+			sourceTree = "<group>";
+		};
+		4241B65516BEFC2100343212 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				4241B65916BEFCB800343212 /* MKStageInfoTest.h */,
+				4241B65A16BEFCB800343212 /* MKStageInfoTest.m */,
+			);
+			name = Stage;
 			sourceTree = "<group>";
 		};
 		425C1C9216B3794800822520 /* Scenario */ = {
@@ -268,6 +294,7 @@
 		42BADF1016A31C2D0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4241B65416BEFC1C00343212 /* Stage */,
 				425C1C9216B3794800822520 /* Scenario */,
 				4208D82A16AC18E700710969 /* Projectile */,
 				42B063C916A44F3E00D23975 /* Tower */,
@@ -292,6 +319,7 @@
 		42BADF1516A31D9E0040C77F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4241B65516BEFC2100343212 /* Stage */,
 				425C1C9416B3794E00822520 /* Scenario */,
 				4208D82F16AC1FB900710969 /* Projectile */,
 				42B063CA16A44F4600D23975 /* Tower */,
@@ -357,6 +385,7 @@
 		42C47DA816A2E8230013306E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				420D8EDE16D2CD38006C6BB6 /* stageForTest.plist */,
 				42C47DA916A2E8230013306E /* MKTowerDefence-Info.plist */,
 				42C47DAA16A2E8230013306E /* InfoPlist.strings */,
 				42C47DAD16A2E8230013306E /* main.m */,
@@ -462,6 +491,7 @@
 				42C47DB416A2E8230013306E /* Default.png in Resources */,
 				42C47DB616A2E8230013306E /* Default@2x.png in Resources */,
 				42C47DB816A2E8230013306E /* Default-568h@2x.png in Resources */,
+				420D8EDF16D2CD38006C6BB6 /* stageForTest.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +541,7 @@
 				4208D83B16AC2FC100710969 /* MKTowerFactory.m in Sources */,
 				425C1C9A16B379BA00822520 /* MKWave.m in Sources */,
 				425C1CA016B3826400822520 /* MKScenario.m in Sources */,
+				4241B65816BEFC7500343212 /* MKStageInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +557,7 @@
 				4208D83216AC1FD300710969 /* MKProjectileTest.m in Sources */,
 				425C1C9D16B37F1C00822520 /* MKWaveTest.m in Sources */,
 				425C1CA316B3840A00822520 /* MKScenarioTest.m in Sources */,
+				4241B65B16BEFCB800343212 /* MKStageInfoTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

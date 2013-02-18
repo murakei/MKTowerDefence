@@ -24,7 +24,7 @@
     STAssertEquals([tower towerId], 1, @"tower はIDを持つこと.ただし一意であることはRepositoryに任せる");
     STAssertEquals([tower range], (float) 10, @"tower の射程距離の初期値は10であること");
     STAssertEquals([tower shootCounter], 0, @"tower の弾発射のカウンタの初期値は10であること");
-    STAssertEquals([tower shootCounterMax], 10, @"tower の弾発射のカウンタの最大値（発射間隔）の初期値は10であること");
+    STAssertEquals([tower shootCounterMax], 20, @"tower の弾発射のカウンタの最大値（発射間隔）の初期値は10であること");
     // tower は action,shootといった動作を実行できること
     [tower action];
     [tower shoot];
@@ -46,6 +46,7 @@
     STAssertNil([tower shoot], @"攻撃対象が居ない場合はshootしてもnilが返ること");
 
     [tower action];
+    [tower setShootCounter:20];
     STAssertNotNil([tower targetPoint], @"tower は 目標位置(targetPoint)を持たないこと");
     STAssertNotNil([tower shoot], @"攻撃対象が居ない場合はshootしてもnilが返ること");
 }

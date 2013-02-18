@@ -52,6 +52,10 @@
  */
 + (MKScenario *)createSampleScenario;
 /**
+ * plistのXML情報からScenarioを生成する
+ */
++ (MKScenario *)createScenarioFromPlist:(NSArray *)plist;
+/**
  * frameをカウントし起こすべきアクションを得ます
  * @return アクションの内容
  */

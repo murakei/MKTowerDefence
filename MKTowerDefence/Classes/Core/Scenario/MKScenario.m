@@ -54,6 +54,26 @@
     return scenario;
 }
 /**
+ * plistのXML情報からScenarioを生成する
+ * @params plist Scenarioデータ
+ * @return scenario instance
+ */
++ (MKScenario *)createScenarioFromPlist:(NSArray *)plist {
+    MKScenario *scenario = [[MKScenario alloc] init];
+    for (int i = 0; i < [plist count]; i++) {
+        NSArray *waves = [[plist objectAtIndex:i] objectForKey:@"wave"];
+        MKWave *wave = [[MKWave alloc] init];
+        for (int j = 0; j < [waves count]; j++) {
+            NSDictionary *item = [waves objectAtIndex:j];
+            [wave addWaveData:
+                [MKWaveData createWithCreepType:[item objectForKey:@"creepType"]
+                                      waitFrame:[[item objectForKey:@"waitFrame"] intValue]]];
+        }
+        [scenario addWave:wave];
+    }
+    return scenario;
+}
+/**
  * frameをカウントし起こすべきアクションを得る
  * @return アクションの内容
  */

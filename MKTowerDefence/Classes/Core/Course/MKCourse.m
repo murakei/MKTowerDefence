@@ -36,6 +36,21 @@
     return c;
 }
 /**
+ * plistのXML情報からCourseを生成する
+ * @params plist Courseデータ
+ * @return course instance
+ */
++ (MKCourse *)createCourseFromPlist:(NSArray *)plist {
+    MKCourse *course = [[MKCourse alloc] init];
+    for (int i = 0; i < [plist count]; i++) {
+        NSDictionary *item = [plist objectAtIndex:i];
+        float x = [[item objectForKey:@"x"] floatValue];
+        float y = [[item objectForKey:@"y"] floatValue];
+        [course addPoint:[MKPoint createWithX:x andY:y]];
+    }
+    return course;
+}
+/**
  * コースに目標地点を追加する.
  * コースはステージごとに決まるのでコース初期化時にのみ利用する想定.
  */

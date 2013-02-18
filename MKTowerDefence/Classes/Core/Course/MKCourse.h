@@ -25,9 +25,15 @@
     int pointIndex;
 }
 /**
- * サンプルのコースを生成します
+ * サンプルのコースを生成する.
  */
 + (MKCourse *)createSampleCourse;
+/**
+ * plistのXML情報からCourseを生成する
+ * @params plist Courseデータ
+ * @return course instance
+ */
++ (MKCourse *)createCourseFromPlist:(NSArray *)plist;
 /**
  * コースに目標地点を追加する.
  * コースはステージごとに決まるのでコース初期化時にのみ利用する想定.
