@@ -29,7 +29,7 @@
  * 将来的にはTower別のロジックもコマンドで指定できるようにしたい.
  */
 - (MKTower *)createWithCommand:(NSString *)command {
-    MKTower *tower = [[MKTower alloc] init];
+    MKTower *tower = [[[MKTower alloc] init] autorelease];
     
     numberOfTowerCreated++;
     return tower;

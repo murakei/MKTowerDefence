@@ -29,9 +29,9 @@
  * 将来的にはCreep別のロジックもコマンドで指定できるようにしたい.
  */
 - (MKCreep *)createWithCommand:(NSString *)command {
-    MKCreep *c = [[MKCreep alloc] init];
+    MKCreep *c = [[[MKCreep alloc] init] autorelease];
     c.creepId = numberOfCreepCreated;
-    [c setCourse:[_course copy]];
+    [c setCourse:[[_course copy] autorelease]];
     
     // command により調整
     c.speed = 1;

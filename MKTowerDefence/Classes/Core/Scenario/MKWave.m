@@ -46,7 +46,7 @@
  * @return インスタンス
  */
 + (MKWave *)createSampleWave {
-    MKWave *wave = [[MKWave alloc] init];
+    MKWave *wave = [[[MKWave alloc] init] autorelease];
     [wave addWaveData:[MKWaveData createWithCreepType:@"creepA" waitFrame:10]];
     [wave addWaveData:[MKWaveData createWithCreepType:@"creepA" waitFrame:10]];
     [wave addWaveData:[MKWaveData createWithCreepType:@"creepA" waitFrame:10]];
@@ -97,7 +97,7 @@
  * @return (MKWaveData)一体の敵の出現に関する情報
  */
 + (MKWaveData *)createWithCreepType:(NSString *)creepType waitFrame:(int)waitFrame {
-    MKWaveData *data = [[MKWaveData alloc] init];
+    MKWaveData *data = [[[MKWaveData alloc] init] autorelease];
     data.creepType = creepType;
     data.waitFrame = waitFrame;
     return data;

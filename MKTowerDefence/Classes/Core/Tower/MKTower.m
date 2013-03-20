@@ -71,7 +71,7 @@
     }
     if (_shootCounter == _shootCounterMax) {
         _shootCounter = 0;
-        return [[MKProjectile alloc] init];
+        return [[[MKProjectile alloc] init] autorelease];
     }
     return nil;
 }
@@ -85,7 +85,7 @@
         return nil;
     }
     NSArray *list = [_creepRepository findAll];
-    NSMutableArray *targetList = [[NSMutableArray alloc] init];
+    NSMutableArray *targetList = [[[NSMutableArray alloc] init] autorelease];
 
     for (int i = 0; i < [list count]; i++) {
         id<MKCreepProtocol> creep = [list objectAtIndex:i];

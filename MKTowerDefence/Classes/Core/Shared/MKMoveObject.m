@@ -78,7 +78,7 @@
  * @return (MKPoint *)現在位置
  */
 - (MKPoint *)currentPoint {
-    return [_currentPoint copy];
+    return [[_currentPoint copy] autorelease];
 }
 /**
  * 目標位置を設定します
@@ -92,7 +92,7 @@
  * @return (MKPoint *)目標位置
  */
 - (MKPoint *)targetPoint {
-    return [_targetPoint copy];
+    return [[_targetPoint copy] autorelease];
 }
 /**
  * 移動量を計算する

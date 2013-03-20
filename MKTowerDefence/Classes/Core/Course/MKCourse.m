@@ -29,7 +29,7 @@
  * サンプルのコースを生成します
  */
 + (MKCourse *)createSampleCourse {
-    MKCourse *c = [[MKCourse alloc] init];
+    MKCourse *c = [[[MKCourse alloc] init] autorelease];
     [c addPoint:[MKPoint createWithX:100 andY:100]];
     [c addPoint:[MKPoint createWithX:100 andY:200]];
     [c addPoint:[MKPoint createWithX:200 andY:200]];
@@ -41,7 +41,7 @@
  * @return course instance
  */
 + (MKCourse *)createCourseFromPlist:(NSArray *)plist {
-    MKCourse *course = [[MKCourse alloc] init];
+    MKCourse *course = [[[MKCourse alloc] init] autorelease];
     for (int i = 0; i < [plist count]; i++) {
         NSDictionary *item = [plist objectAtIndex:i];
         float x = [[item objectForKey:@"x"] floatValue];
@@ -70,7 +70,7 @@
     if (pointIndex >= [_pointList count]) {
         return nil;
     }
-    MKPoint *p = [[_pointList objectAtIndex:pointIndex] copy];
+    MKPoint *p = [[[_pointList objectAtIndex:pointIndex] copy] autorelease];
     pointIndex++;
     return p;
 }

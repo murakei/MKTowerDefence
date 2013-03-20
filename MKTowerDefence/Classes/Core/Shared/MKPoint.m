@@ -32,7 +32,7 @@
  * 新しいインスタンスを生成する
  */
 + (MKPoint *)createWithX:(float)x andY:(float)y {
-    MKPoint *p = [[MKPoint alloc] init];
+    MKPoint *p = [[[MKPoint alloc] init] autorelease];
     p->_point = CGPointMake(x, y);
     return p;
 }

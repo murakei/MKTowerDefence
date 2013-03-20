@@ -49,7 +49,7 @@
  * @return a sample scenario
  */
 + (MKScenario *)createSampleScenario {
-    MKScenario *scenario = [[MKScenario alloc] init];
+    MKScenario *scenario = [[[MKScenario alloc] init] autorelease];
     [scenario addWave:[MKWave createSampleWave]];
     return scenario;
 }
@@ -59,10 +59,10 @@
  * @return scenario instance
  */
 + (MKScenario *)createScenarioFromPlist:(NSArray *)plist {
-    MKScenario *scenario = [[MKScenario alloc] init];
+    MKScenario *scenario = [[[MKScenario alloc] init] autorelease];
     for (int i = 0; i < [plist count]; i++) {
         NSArray *waves = [[plist objectAtIndex:i] objectForKey:@"wave"];
-        MKWave *wave = [[MKWave alloc] init];
+        MKWave *wave = [[[MKWave alloc] init] autorelease];
         for (int j = 0; j < [waves count]; j++) {
             NSDictionary *item = [waves objectAtIndex:j];
             [wave addWaveData:
