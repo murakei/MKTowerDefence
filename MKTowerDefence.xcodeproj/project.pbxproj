@@ -517,7 +517,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n#\"${PROJECT_DIR}/XcodeScripts/RunUnitTests\"\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n#\"${PROJECT_DIR}/XcodeScripts/RunUnitTests\"\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n${PROJECT_DIR}/XcodeScripts/run_tests.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -676,6 +676,7 @@
 				INFOPLIST_FILE = "MKTowerDefenceTests/MKTowerDefenceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -693,6 +694,7 @@
 				INFOPLIST_FILE = "MKTowerDefenceTests/MKTowerDefenceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
