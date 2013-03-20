@@ -676,6 +676,7 @@
 				GCC_PREFIX_HEADER = "MKTowerDefence/MKTowerDefence-Prefix.pch";
 				INFOPLIST_FILE = "MKTowerDefenceTests/MKTowerDefenceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -693,6 +694,7 @@
 				GCC_PREFIX_HEADER = "MKTowerDefence/MKTowerDefence-Prefix.pch";
 				INFOPLIST_FILE = "MKTowerDefenceTests/MKTowerDefenceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
